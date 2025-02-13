@@ -4,164 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navneet Kumar | Lead Software Engineer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(45deg, #0078d7, #00a8e8);
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin: 1rem 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #004466;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        .about, .portfolio, .contact {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .skills ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .skills ul li {
-            background: #f3f3f3;
-            padding: 0.5rem 1rem;
-            margin: 0.5rem;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #004466;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        footer a {
-            color: #00a8e8;
-            text-decoration: none;
-        }
-
-        .portfolio img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Navneet Kumar</h1>
-        <p>Lead Software Engineer with 8+ years of experience in web and software development.</p>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold">Navneet Kumar</h1>
+            <p class="text-xl mt-4">Lead Software Engineer with 6.3+ years of experience in building innovative web solutions.</p>
+            <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 font-medium px-6 py-3 rounded-full shadow hover:bg-gray-100">
+                Contact Me
+            </a>
+        </div>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <nav class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto flex justify-center space-x-8 py-4">
+            <a href="#about" class="text-gray-700 font-medium hover:text-blue-600">About</a>
+            <a href="#skills" class="text-gray-700 font-medium hover:text-blue-600">Skills</a>
+            <a href="#portfolio" class="text-gray-700 font-medium hover:text-blue-600">Portfolio</a>
+            <a href="#contact" class="text-gray-700 font-medium hover:text-blue-600">Contact</a>
+        </div>
     </nav>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a seasoned Lead Software Engineer at Webkul Software Pvt. Ltd. with expertise in building web-based applications, 
-            developing Akeneo plugins, and providing efficient solutions for PIM systems. My focus is on creating innovative 
-            and scalable software solutions.
-        </p>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">About Me</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                I am a seasoned Lead Software Engineer at Webkul Software Pvt. Ltd. with expertise in building web-based applications, 
+                developing Akeneo plugins, and providing efficient solutions for PIM systems. I love creating innovative, scalable software.
+            </p>
+        </div>
     </section>
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>PHP</li>
-            <li>Symfony</li>
-            <li>React.js</li>
-            <li>Docker</li>
-            <li>Akeneo Plugin Development</li>
-            <li>MySQL</li>
-            <li>HTML5 & CSS3</li>
-            <li>Version Control (Git, GitHub)</li>
-            <li>API Integration</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-8">
+                <div class="bg-white shadow rounded-lg p-4 text-gray-700 font-medium">PHP</div>
+                <div class="bg-white shadow rounded-lg p-4 text-gray-700 font-medium">Symfony</div>
+                <div class="bg-white shadow rounded-lg p-4 text-gray-700 font-medium">React.js</div>
+                <div class="bg-white shadow rounded-lg p-4 text-gray-700 font-medium">Docker</div>
+                <div class="bg-white shadow rounded-lg p-4 text-gray-700 font-medium">Akeneo Plugins</div>
+                <div class="bg-white shadow rounded-lg p-4 text-gray-700 font-medium">MySQL</div>
+                <div class="bg-white shadow rounded-lg p-4 text-gray-700 font-medium">HTML5 & CSS3</div>
+                <div class="bg-white shadow rounded-lg p-4 text-gray-700 font-medium">API Integration</div>
+            </div>
+        </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
-        <h2>Portfolio</h2>
-        <p>Here are some of my featured projects:</p>
-        <a href="https://store.webkul.com/akeneo-group-attribute-family-api.html" target="_blank">
-            <img src="https://via.placeholder.com/600x400" alt="Akeneo Group Attribute Family API">
-        </a>
-        <a href="https://store.webkul.com/akeneo-image-importer.html" target="_blank">
-            <img src="https://via.placeholder.com/600x400" alt="Akeneo Image Importer">
-        </a>
-        <a href="https://store.webkul.com/akeneo-chatgpt-ai-connector.html" target="_blank">
-            <img src="https://via.placeholder.com/600x400" alt="Akeneo ChatGPT AI Connector">
-        </a>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Portfolio</h2>
+            <p class="text-lg text-gray-600 mt-4">Here are some of my featured projects:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+                <a href="https://store.webkul.com/akeneo-group-attribute-family-api.html" target="_blank">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 1" class="rounded-lg shadow">
+                    <p class="mt-2 text-gray-700 font-medium">Akeneo Group Attribute Family API</p>
+                </a>
+                <a href="https://store.webkul.com/akeneo-image-importer.html" target="_blank">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 2" class="rounded-lg shadow">
+                    <p class="mt-2 text-gray-700 font-medium">Akeneo Image Importer</p>
+                </a>
+                <a href="https://store.webkul.com/akeneo-chatgpt-ai-connector.html" target="_blank">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 3" class="rounded-lg shadow">
+                    <p class="mt-2 text-gray-700 font-medium">Akeneo ChatGPT AI Connector</p>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to discuss projects or just say hi!</p>
-        <p>Email: <a href="mailto:navneetbhardwaj79@gmail.com">navneetbhardwaj79@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/er-navneet/" target="_blank">linkedin.com/in/er-navneet</a></p>
-        <p>GitHub: <a href="https://github.com/navneetbhardwaj" target="_blank">github.com/navneetbhardwaj</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Social</h2>
+            
+            <div class="mt-6">
+                <p class="text-gray-700 font-medium">LinkedIn: <a href="https://www.linkedin.com/in/er-navneet/" class="text-blue-600 hover:underline" target="_blank">linkedin.com/in/er-navneet</a></p>
+                <p class="text-gray-700 font-medium">GitHub: <a href="https://github.com/navneetbhardwaj" class="text-blue-600 hover:underline" target="_blank">github.com/navneetbhardwaj</a></p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2025 Navneet Kumar. All rights reserved.</p>
-        <p>
-            <a href="https://github.com/navneetbhardwaj" target="_blank">GitHub</a> |
-            <a href="https://linkedin.com/in/er-navneet" target="_blank">LinkedIn</a>
-        </p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Navneet Kumar. All rights reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
